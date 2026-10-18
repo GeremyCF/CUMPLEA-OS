@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¡Feliz Cumpleaños, PRECIOSA! </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="confetti-canvas"></canvas>
+
+<div class="floaters" id="floaters"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="balloons">
+    <span class="balloon b1">🎈</span>
+    <span class="balloon b2">🎈</span>
+    <span class="balloon b3">🎈</span>
+    <span class="balloon b4">🎈</span>
+    <span class="balloon b5">🎈</span>
+  </div>
+  <p class="eyebrow">18 de octubre · un día muy especial</p>
+  <h1 class="title">¡Feliz Cumpleaños,<br><span class="highlight">Stefy</span>! 🎉</h1>
+  <p class="subtitle">mi cuysita favorita de todo el universo 🐹💕</p>
+
+  <div class="countdown" id="countdown">
+    <div class="countdown-box"><span id="cd-days">0</span><small>días</small></div>
+    <div class="countdown-box"><span id="cd-hours">0</span><small>horas</small></div>
+    <div class="countdown-box"><span id="cd-mins">0</span><small>min</small></div>
+    <div class="countdown-box"><span id="cd-secs">0</span><small>seg</small></div>
+  </div>
+  <p class="countdown-label" id="countdown-label">para tu día ✨</p>
+
+  <button class="scroll-btn" id="scrollBtn">Baja para tu sorpresa mujejee</button>
+</section>
+
+<!-- LETTER -->
+<section class="letter-section">
+  <div class="letter-card">
+    <div class="letter-stamp">💌</div>
+    <h2>Una cartita para ti</h2>
+    <p class="letter-body">
+      Feliz cumpleaños, mi Stefy hermosa. Hoy quiero recordarte lo agradecido que estoy de que la vida
+      me dieras la oportunidad de conocernos y permitirme estar a tu lado mas tiempo, cuando nos vimos para a ir juntos 
+      a la universidad, sin darnos cuenta, empezamos a construir algo mucho más grande que un simple camino compartido.
+      Desde esa primera cita en la cafetería, supe que quería muchas tardes más contigo, hablando de todo
+      y de nada, riendo de nuestras tonterías, siendo simplemente  tu y yo o mas conocido "la pareja ratitas viajeras".
+    </p>
+    <p class="letter-body">
+      Cada vez que escucho <em>"Can't Take My Eyes Off You"</em> pienso en ti, porque así me siento cuando
+      te veo: sin poder apartar los ojos de la persona que hace mi vida más bonita. Eres mi cuysita, mi
+      persona favorita para todo, y hoy quiero celebrarte tu dia tan especial como tu me los conviertes los mios, recordarte tu hermosa sonrisa , a tu forma de ver el mundo con todo lo que eres y me enseñaste a ser.
+    </p>
+    <p class="letter-body">
+      Que este nuevo año te traiga tantas razones para sonreír como las que tú me regalas a mí cada día.
+      Te amo muchísimo cariño. Feliz cumpleaños, mi amor. :3 <3
+    </p>
+    <p class="letter-signature">Con todo mi amor, <strong>Emy</strong> </p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <h2 class="section-title">Nuestros momentos 📸</h2>
+  <p class="section-subtitle">un pedacito de todo lo que hemos vivido juntos</p>
+  <div class="gallery" id="gallery">
+    <img src="images/1.jpg" alt="Nosotros" class="gallery-img">
+    <img src="images/2.jpg" alt="Nosotros" class="gallery-img">
+    <img src="images/3.jpg" alt="Nosotros" class="gallery-img">
+    <img src="images/4.jpg" alt="Nosotros" class="gallery-img">
+    <img src="images/5.jpg" alt="Nosotros" class="gallery-img">
+    <img src="images/6.jpg" alt="Nosotros" class="gallery-img">
+    <img src="images/7.jpg" alt="Nosotros" class="gallery-img">
+    <img src="images/8.jpg" alt="Nosotros" class="gallery-img">
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightboxClose">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- QUIZ -->
+<section class="quiz-section">
+  <h2 class="section-title">¿Qué tanto sabes de nosotros? 🧠💖</h2>
+  <p class="section-subtitle">un jueguito sorpresa solo para ti</p>
+
+  <div class="quiz-card" id="quizCard">
+    <div class="quiz-progress"><div class="quiz-progress-bar" id="quizProgress"></div></div>
+    <p class="quiz-count" id="quizCount">Pregunta 1 de 5</p>
+    <h3 class="quiz-question" id="quizQuestion"></h3>
+    <div class="quiz-options" id="quizOptions"></div>
+    <p class="quiz-feedback" id="quizFeedback"></p>
+  </div>
+
+  <div class="quiz-result" id="quizResult">
+    <div class="result-emoji">🏆</div>
+    <h3 id="resultTitle"></h3>
+    <p id="resultText"></p>
+    <button class="retry-btn" id="retryBtn">Jugar de nuevo 🔁</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Hecho con mucho amor para la persona más especial del mundo 💕</p>
+  <p class="footer-small">Stefy &amp; Emy</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
